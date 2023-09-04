@@ -21,7 +21,7 @@ Saurabh to help
 
 ## Modules
 
-![pyafar_pipeline](../images/pyafar_pipeline.JPG)
+![pyafar_pipeline](./resources/images/pyafar_pipeline.JPG)
 
 - `Facial Landmarks, Head Pose and Tracking`: Face detection and landmark prediction is done using the [MediaPipe](https://research.google/pubs/pub48292/) library. Tracking is performed using the [FaceNet](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Schroff_FaceNet_A_Unified_2015_CVPR_paper.pdf). The Perspective-n-Point (PnP) method is used to predict Roll, Pitch and Yaw
 - `Face Normalization`: The landmark predictions are used to normalize faces using the [dlib](http://dlib.net/) library.
