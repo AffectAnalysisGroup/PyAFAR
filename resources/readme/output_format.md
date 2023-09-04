@@ -4,10 +4,10 @@
 PyAFAR outputs a CSV file with following columns:
 
 
-`Frame`: Frame number in the input video
-`Person_ID`: Identifier for an individual in the video, if there are multiple individuals in the input Person_ID can be greater than 1
-`Eye Aspect Ratio`: Ratio of width to height of the eye, this is the mean aspect ratio between the left eye and the right eye
-`Mouth Aspect Ratio`: Ratio of width to height of the mouth
+- `Frame`: Frame number in the input video
+- `Person_ID`: Identifier for an individual in the video, if there are multiple individuals in the input Person_ID can be greater than 1
+- `Eye Aspect Ratio`: Ratio of width to height of the eye, this is the mean aspect ratio between the left eye and the right eye
+- `Mouth Aspect Ratio`: Ratio of width to height of the mouth
 
 
 ## Tracking
@@ -71,4 +71,4 @@ where `Int_au_i` column in the CSV is the intensity of `AU i` expressed by `Pers
 
 PyAFAR can predict various face based affect related features as demonstrated below
 
-![demo_gif](https://github.com/AffectAnalysisGroup/PyAFAR/images/pyafar_demo.gif)
+![demo_gif](../images/pyafar_demo.gif)

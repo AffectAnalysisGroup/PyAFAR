@@ -20,7 +20,7 @@ The python-based Automated Facial Affect Recognition (PyAFAR) comes as a executa
 
 ## How to run
 
-A step-by-step instruction guide with screenshots on how to run PyAFAR can be found [here](./resources/readme/pyafar_instructions.md).
+A step-by-step instruction guide with screenshots on how to run PyAFAR can be found [here](./resources/readme/instructions.md).
 
 
 ## Output format
