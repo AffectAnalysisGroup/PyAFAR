@@ -20,7 +20,7 @@ These are necessary settings that include path to videos to process, save and ot
 
 - `Use GPU`: GPUs enable faster AU predictions. If your machine has a GPU that you wish to use, enable this.
 - `Batch size`: The batch size for AU predictions. Larger GPUs memory can accommodate higher batch size.
-- `Preprocessing size`:
-- `Person Tracking`: 
+- `Preprocessing size`: Saurabh help
+- `Person Tracking`: Saurabh help
 - `AU occurrence`: Choice of occurrence predictions required from the Input Videos.
 - `AU intensity`: Choice of intensity predictions required from the Input Videos.

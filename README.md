@@ -1,11 +1,14 @@
 # PyAFAR
 
+PyAFAR is a Python-based, open-source facial action unit detection library for use with adults and infants.
 
 ## Requirements
 
-The python-based Automated Facial Affect Recognition (PyAFAR) comes as a executable file for Windows, Linux (Ubuntu) and Mac platforms. It can be used out-of-the-box with no additional requirements.
+PyAFAR comes as a executable file for Windows, Linux (Ubuntu) and Mac platforms. It can be used as an out-of-the-box software with no additional dependency requirements.
 
 ### Last validated system configuration
+
+Saurabh to help
 
 #### Windows
 
@@ -17,6 +20,11 @@ The python-based Automated Facial Affect Recognition (PyAFAR) comes as a executa
 
 
 ## Modules
+
+- `Facial Landmarks & Head Pose`: Face detection and landmark prediction is done using the [MediaPipe](https://research.google/pubs/pub48292/) library. Tracking is performed using the [FaceNet](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Schroff_FaceNet_A_Unified_2015_CVPR_paper.pdf). The Perspective-n-Point (PnP) method is used to predict Roll, Pitch and Yaw
+- `Face Normalization`: The landmark predictions are used to normalize faces using the [dlib](http://dlib.net/) library.
+- `AU predictions`: Separate detection modules for occurrence are available for both adults and infants. Intensity predictions are available for adults only.
+- `Output`: PyAFAR can output frame-level predictions in CSV and JSON formats to enable easy reading with most platforms used by both computational as well as domain experts.
 
 ## How to run
 

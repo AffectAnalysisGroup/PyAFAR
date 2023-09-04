@@ -1,7 +1,7 @@
 
 ![pyafar_pipeline](../images/pyafar_pipeline.JPG)
 
-PyAFAR outputs a CSV file with following columns:
+PyAFAR outputs a CSV (or JSON) file with following columns (or fields):
 
 
 - `Frame`: Frame number in the input video
