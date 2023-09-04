@@ -1,5 +1,5 @@
 
-![pyafar_pipeline](https://github.com/AffectAnalysisGroup/PyAFAR/resources/images/pyafar_pipeline.JPG)
+![pyafar_pipeline](../images/pyafar_pipeline.JPG)
 
 PyAFAR outputs a CSV file with following columns:
 
@@ -17,7 +17,7 @@ The output CSV file contains predictions for frames where at least individual in
 
 ## Head Pose
 
-`Pitch, Yaw, Roll`: Head orientation along Pitch, Yaw and Roll
+`Pitch, Yaw, Roll`: Head orientation along Pitch, Yaw and Roll (in degrees or radians?)
 
 ## Facial Landmarks
 

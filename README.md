@@ -30,7 +30,7 @@ A complete description of each variable in the output can be found [here](./reso
 
 ## Citations
 
-PyAFAR is a result of many works 
+PyAFAR is a result of the following publications. If you use PyAFAR in your work, cite our following contributions:
 
 
 **Pipeline**
@@ -58,7 +58,7 @@ PyAFAR is a result of many works
 }
 ```
 
-**AU detector and AFAR finetune:**
+**Adult AU detector:**
 ```
 @inproceedings{ertugrul2019cross,
   title={Cross-domain AU Detection: Domains, Learning Approaches, and Measures},
@@ -71,7 +71,7 @@ PyAFAR is a result of many works
 
 ## MIT License
 
-Copyright (c) 2022 AffectAnalysisGroup
+Copyright (c) 2022 AffectAnalysisGroup (merge and publish rights also given??)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
