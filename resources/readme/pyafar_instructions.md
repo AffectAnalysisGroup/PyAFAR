@@ -4,7 +4,7 @@ PyAFAR has two settings--basic and advanced to obtain landmarks, head pose and a
 
 ### Basic settings
 
-![Basic settings](https://github.com/AffectAnalysisGroup/PyAFAR/images/basic_settings.JPG)
+![Basic settings](../images/basic_settings.JPG)
 
 These are necessary settings that include path to videos to process, save and other information.
 
@@ -16,7 +16,7 @@ These are necessary settings that include path to videos to process, save and ot
 
 ### Advanced settings
 
-![Advanced settings](https://github.com/AffectAnalysisGroup/PyAFAR/images/advanced_settings.JPG)
+![Advanced settings](../images/advanced_settings.JPG)
 
 `Use GPU`: GPUs enable faster AU predictions. If your machine has a GPU that you wish to use, enable this.
 `Batch size`: The batch size for AU predictions. Larger GPUs memory can accommodate higher batch size.
