@@ -1,6 +1,3 @@
-
-![pyafar_pipeline](../images/pyafar_pipeline.JPG)
-
 PyAFAR outputs a CSV (or JSON) file with following columns (or fields):
 
 
