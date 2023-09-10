@@ -32,8 +32,8 @@ The AU detector module of PyAFAR can predict occurrence and intensity of the fol
 ```
 AU 1 (adult, infant): Inner Brow Raise
 AU 2 (adult, infant): Outer Brow Raise
-AU 3 (infant only): 
-AU 4: Brow Lowerer
+AU 3 (infant only): Inner corner Brow Tightener
+AU 4 (adult, infant): Brow Lowerer
 AU 6 (adult, infant): Cheek Raise
 AU 7 (adult only): Lids Tight
 AU 9 (infant only): Nose wrinkle
