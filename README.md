@@ -6,7 +6,7 @@ PyAFAR is a Python-based, open-source facial action unit detection library for u
 
 PyAFAR comes as an executable file for Windows, Linux (Ubuntu), and Mac platforms. It can be used as an out-of-the-box software with no additional dependency requirements.
 
-PyAFAR GPU capabilities only on Linux or WSL2
+PyAFAR GPU capabilities work only on Linux or WSL2
 
 ## Modules
 
