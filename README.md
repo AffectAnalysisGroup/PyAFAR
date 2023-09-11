@@ -28,7 +28,7 @@ A complete description of each variable in the output can be found [here](./reso
 
 
 ## Infant Models
-The Infant models are not yet available. For participant privacy, they must be encrypted.  We have encountered difficulties in encrypting the models and are working to resolve them. They will be released as soon as reliable encryption is achieved.  
+The Infant models are not yet available. For participant privacy, they must be encrypted.  We have encountered difficulties in encrypting the models and are working to resolve them. Infant models will be released as soon as reliable encryption is achieved.  
 
 
 ## Citations
