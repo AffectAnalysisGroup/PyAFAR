@@ -27,6 +27,10 @@ A step-by-step instruction guide with screenshots on how to run PyAFAR can be fo
 A complete description of each variable in the output can be found [here](./resources/readme/output_format.md).
 
 
+**Infant Models**
+The Infant models are not yet available. For participant privacy, they must be encrypted.  We have encountered difficulties in encrypting the models and are working to resolve them. They will be released as soon as reliable encryption is achieved.  
+
+
 ## Citations
 
 PyAFAR is a result of the following publications. If you use PyAFAR in your work, cite our following contributions:
