@@ -1,6 +1,6 @@
 # PyAFAR
 
-PyAFAR is a Python-based, open-source facial action unit detection library for use with adults and infants.
+PyAFAR is a Python-based, open-source facial action unit detection library for use with adults and infants. For an introduction to PyAFAR and understanding the Facial Affect Coding System (FACS), visit our [website](https://affectanalysisgroup.github.io/PyAFAR2023/).
 
 ## Requirements
 
