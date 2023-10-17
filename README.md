@@ -21,6 +21,7 @@ PyAFAR GPU capabilities work only on Linux or WSL2
 
 A step-by-step instruction guide with screenshots on how to run PyAFAR can be found [here](./resources/readme/instructions.md).
 
+Ensure the executable file (.exe file in windows) and the downloaded models folder are in the same directory for the package to run.
 
 ## Output format
 
