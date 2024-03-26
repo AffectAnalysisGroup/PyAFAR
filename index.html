@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PyAFAR: Python-based Automated Facial Action Recognition library for use in Infants and Adults</title>
+  <!-- Bootstrap -->
+  <link href="./css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link href="./css/project.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+
+<!-- cover -->
+
+<body>
+  <section>
+    <div class="jumbotron text-center mt-0">
+        <div class="section logos" style="text-align:center">
+          <IMG src="./images/Pitt.png" height="60" border="0">
+          </td>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+          <IMG src="./images/universiteit-utrecht-logo.png" height="75"
+              border="0"></td>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+          <IMG src="./images/University-Of-Miami-Symbol.png" height="60" border="0"></td>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+          <IMG src="https://acii-conf.net/2023/wp-content/uploads/2022/11/cropped-cropped-acii2023-icon-k.png" height="60" border="0">
+          </td>
+        </div></p>
+        <div class="col-12">
+          <h2>PyAFAR: Python-based Automated Facial Action Recognition library for use in Infants and Adults</h2>
+          <h5><strong>(ACII 2023)</strong></h5>            
+          <!-- <h4 style="color:#5a6268;">Arxiv 2022</h4> -->
+          <p></p>
+          <h6>
+          <div class="authors">
+            <a href="https://saurabhh.com/" target="_blank">Saurabh Hinduja</a><sup> 1</sup><sup> 4</sup>&#160;&#160;
+            <a href="https://itironal.github.io/" target="_blank">Itir Onal Ertugrul</a><sup> 2</sup>&#160;&#160;
+            <a href="https://bmaneesh.github.io/" target="_blank">Maneesh Bilalpur </a><sup> 1</sup>&#160;&#160;
+            <a href="https://scholar.google.com/citations?user=CFpUEVwAAAAJ&hl=en" target="_blank"> Daniel S. Messinger</a><sup> 3</sup>&#160;&#160;
+            <a href="https://www.jeffcohn.net/" target="_blank">Jeffrey F. Cohn</a><sup> 1</sup>&#160;&#160;
+          </div>
+          <div class="affiliations">
+            <sup>1</sup>University of Pittsburgh&#160;&#160;
+            <sup>2</sup>Utrecht University&#160;&#160;
+            <sup>3</sup>University of Miami&#160;&#160;
+            <sup>4</sup>CGI Technologies and Solutions Inc&#160;&#160;
+          </div>
+          <br>
+          <div class="row justify-content-center">
+            <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://www.jeffcohn.net/wp-content/uploads/2023/08/ACII_2023_paper_242-2.pdf" role="button" target="_blank">
+                  <i class="fa fa-file"></i> Paper</a> </p>
+            </div>
+            <div class="column">
+              <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/AffectAnalysisGroup/PyAFAR" role="button" target="_blank">
+                <i class="fa fa-github"></i> Docs</a> </p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="col-12 text-center">
+    <h5><font color="red">PyAFAR will be available for multiple Operating Systems starting March 24th 2024. PyAFAR for videos of adults and infants can be used on Windows and Linux (comes with optional GPU support). Mac OS support is available for the infant videos only. Download them from Docs/Release.</font></h5>
+  </div>
+  </section>
+
+  <section>
+    <div class="jumbotron-grey">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3><b>Abstract</b></h3>
+          <br>
+          <div class="row" style="margin-bottom:5px">
+<!--             <div class="col" style="text-align:center">
+              <img class="thumbnail" src="./images/pyafar_demo.gif" style="width:80%; margin-bottom:20px">
+            </div>
+ -->          </div>
+          <p class="text-left">
+            PyAFAR is a Python-based, open-source facial action unit detection library for use with adults and infants. Convolutional Neural Networks were trained on BP4D+ for adults and MIAMI and CLOCK databases for infants. In adults, Action Unit occurrence and intensity detection are enabled for 12 AUs. The 12 AUs were selected on the criterion that they occurred more than 5% of the time in the training data that included BP4D. Because 5% baseline was the minimum for which reliability could be measured with confidence, AU with prevalence lower than that were not included. Action unit intensity estimation is enabled for 5 of these AU. In infants, AU occurrence is enabled for 9 action units that are involved in expression of positive and negative affect. For both adults and infants, facial landmark and head pose tracking are enabled as well. For adults, multiple persons within a video may be tracked. The library is developed for ease of use. The models are available for fine-tuning and further training. PyAFAR may be easily incorporated into user Python code.</p>
+            <div class="row" style="margin-bottom:5px">
+              <div class="col" style="text-align:center">
+                <img class="thumbnail" src="./images/pyafar_pipeline.JPG" style="width:70%; margin-bottom:0px">
+              </div>
+            </div>
+            <p class="text-fig">Pipeline of PyAFAR.
+            </p> 
+            <p>PyAFAR has separate modules for facial feature extraction and tracking, Face normalization and AU predictions:</p>
+            <p class="text-left">It uses <a href="https://research.google/pubs/pub48292/">MediaPipe</a> library for landmarks. Tracking is performed using the <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Schroff_FaceNet_A_Unified_2015_CVPR_paper.pdf">FaceNet</a>. The Perspective-n-Point (PnP) method is used to predict Roll, Pitch and Yaw.</p>
+
+            <p class="text-left"> The landmark predictions are used to normalize faces using the <a href="http://dlib.net/">dlib</a> library.</p>
+            <p class="text-left"> Normalized faces are used for AU predictions (occurrence and intensity). Separate detection modules for occurrence are available for adults and infants. Intensity predictions are available for adults only.</p>
+            <p class="text-left"> PyAFAR can output frame-level predictions in CSV and JSON formats to enable easy reading with most platforms used by both computational as well as domain experts.</p>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3><b>Demo</b></h3>
+          <!-- <iframe width="560" height="315" src="./images/pyafar_demo.git" title="YouTube video player" frameborder="0" allowfullscreen></iframe> -->
+          <!-- added demo video -->
+            <div class="col" style="text-align:center">
+              <img class="thumbnail" src="./images/pyafar_demo.gif" style="width:80%; margin-bottom:20px">
+          </div>
+          <p>Interested in learning more about Facial Action Coding System (FACS) for Action Unit annotation? Visit this <a href="https://sites.pitt.edu/~jeffcohn/FACSmodule.html">interactive application</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3><b>How to use</b></h3>
+          <!-- <iframe width="560" height="315" src="./images/pyafar_demo.git" title="YouTube video player" frameborder="0" allowfullscreen></iframe> -->
+          <!-- added demo video -->
+            <div class="col" style="text-align:center">
+              <img class="thumbnail" src="./images/how_to_use.gif" style="width:80%; margin-bottom:20px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+<!--   <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3><b>Faster Rendering</b></h3>
+          <p class="text-left"> Below demonstrates the rendering quality and speed of our DyLiN method (Right) compared to HyperNeRF
+            (Left), the previous state-of-the-art, on real scenes.</p>
+          <h6 class="text-center">&#128512; NOTE: The Left video is not a still image; it is just moving at 0.34 FPS, while ours renders at
+            a smooth(er) 8.6 FPS!&#128512; </h6>
+          <div class="video-container">
+            <div class="embed-responsive embed-responsive-video-16by9">
+              <video width="640" height="360" autoplay loop muted>
+                <source src="./images/americano.mp4" type="video/mp4">
+                <source src="./images/americano.webm" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="embed-responsive embed-responsive-video-16by9">
+              <video width="640" height="360" autoplay loop muted>
+                <source src="./images/vrigchicken.mp4" type="video/mp4">
+                <source src="./images/vrigchicken.webm" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3><b>Increased Visual Clarity</h3><b></b></h3>
+          <p class="text-left"> We also tested DyLiN on synthetic scenes. In addition to significantly faster render times,
+            we achieve superior fidelity! Results are played at the same FPS with the actual speed noted above.</p>
+          <div class="embed-responsive embed-responsive-video-synthetic">
+            <video width="640" height="360" autoplay loop muted>
+              <source src="./images/lego-dylin.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="embed-responsive embed-responsive-video-synthetic">
+            <video width="640" height="360" autoplay loop muted>
+              <source src="./images/jumping-dylin.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="embed-responsive embed-responsive-video-synthetic">
+            <video width="640" height="360" autoplay loop muted>
+              <source src="./images/hook-dylin.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+ -->  
+  <br>
+<!--   <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3><b>Controllable Extension</h3></b></h3>
+          <p class="text-left"> To get the CoDyLiN architecture, we directly added masks to signify which regions of the scene are controllable and 
+            attribute values for the state of the transition, with -1 being the start of the transition and +1 being the end. With the addition of both of these elements to DyLiN, 
+            we can fully control the smile, closing of the eye, and raising of the eyebrow</p>
+          <div class="embed-responsive embed-responsive-video-synthetic">
+            <video width="640" height="360" autoplay loop muted>
+              <source src="./images/pyafar_demo.gif" type="video/gif">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ -->  <section>
+    <div class="container">
+      <div class="row ">
+        <div class="col-12">
+            <h3><b>Citations</b></h3>
+                <pre style="background-color: #e9eeef">
+                  <code>
+  @inproceedings{ertugrulpyafar,
+  title={Expanding PyAFAR: A Novel Privacy-Preserving Infant AU Detector},
+  author={Ertugrul, Itir Onal and Hinduja, Saurabh and Bilalpur, Maneesh and Messinger, Daniel S and Cohn, Jeffrey F},
+  booktitle={International Conference on Automatic Face and Gesture Recognition},
+  year={2024},
+  organization={IEEE}
+  }
+
+  @inproceedings{hindujapyafar,
+  title={PyAFAR: Python-based Automated Facial Action Recognition library for use in Infants and Adults},
+  author={Hinduja, Saurabh and Ertugrul, Itir Onal and Bilalpur, Maneesh and Messinger, Daniel S and Cohn, Jeffrey F},
+  booktitle={International Conference on Affective Computing and Intelligent Interaction},
+  year={2023},
+  organization={IEEE}
+  }
+
+                </code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3><b>Acknowledgements</h3></b></h3>
+          <p class="text-left">The development of PyAFAR was supported in part by NIH awards R01MH096951, R01GM105004, and UH3NS100549.</p>
+          <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+
+  </div>
+</body>
+
+</html>

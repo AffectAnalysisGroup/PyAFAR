@@ -1,0 +1,35 @@
+li.grid
+{
+    width: auto;
+    height: auto;
+    /* border: 1px solid #000; */
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+    zoom: 1;
+    *display: inline;
+    _height: 100px;
+}
+/* Formatting for each item in a 2D grid. This is used typically in the downloads section. */
+.griditem
+{
+    font-size: 11pt;
+    text-align: center;
+    padding: 0px;
+}
+.griditem img
+{
+    text-align: center;
+    height:190px;
+    box-shadow: 0px;
+	font-size: 10pt;
+}
+.griditem2 img
+{
+    text-align: center;
+    height:250px;
+    width:auto;
+    box-shadow: 0px;
+	font-size: 10pt;
+}
