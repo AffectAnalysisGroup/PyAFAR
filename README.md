@@ -1,12 +1,12 @@
 # PyAFAR
 
-PyAFAR is a Python-based, open-source facial action unit detection library for use with adults and infants. For an introduction to PyAFAR and understanding the Facial Affect Coding System (FACS), visit our [website](https://affectanalysisgroup.github.io/PyAFAR2023/).
+PyAFAR is a Python-based, open-source facial action unit detection library for use with adults and infants. For an introduction to PyAFAR and understanding the Facial Affect Coding System (FACS), visit our [website](https://affectanalysisgroup.github.io/PyAFAR/).
 
 ## Requirements
 
 PyAFAR comes as an executable file for Windows, Linux (Ubuntu), and Mac platforms. It can be used as an out-of-the-box software with no additional dependency requirements.
 
-PyAFAR GPU capabilities work only on Linux or WSL2
+PyAFAR GPU capabilities work only on Linux or WSL2.
 
 ## Modules
 
@@ -50,6 +50,14 @@ PyAFAR is a result of the following publications. If you use PyAFAR in your work
 **Infant AU detector**
 
 ```
+@inproceedings{ertugrulpyafar,
+  title={Expanding PyAFAR: A Novel Privacy-Preserving Infant AU Detector},
+  author={Ertugrul, Itir Onal and Hinduja, Saurabh and Bilalpur, Maneesh and Messinger, Daniel S and Cohn, Jeffrey F},
+  booktitle={International Conference on Automatic Face and Gesture Recognition},
+  year={2024},
+  organization={IEEE}
+}
+
 @article{onal2023infant,
   title={Infant AFAR: Automated facial action recognition in infants},
   author={Onal Ertugrul, Itir and Ahn, Yeojin Amy and Bilalpur, Maneesh and Messinger, Daniel S and Speltz, Matthew L and Cohn, Jeffrey F},
@@ -62,25 +70,12 @@ PyAFAR is a result of the following publications. If you use PyAFAR in your work
 }
 ```
 
-**Adult AU detector:**
-```
-@inproceedings{ertugrul2019cross,
-  title={Cross-domain AU Detection: Domains, Learning Approaches, and Measures},
-  author={Onal Ertugrul, Itir and Cohn, Jeffrey F and Jeni, L{\'a}szl{\'o} A and Zhang, Zheng and Yin, Lijun and Ji, Qiang},
-  booktitle={2019 14th IEEE International Conference on Automatic Face \& Gesture Recognition (FG 2019)},
-  year={2019},
-  organization={IEEE}
-}
-```
-
 ## MIT License
 
-Copyright (c) 2022 AffectAnalysisGroup (merge and publish rights also given??)
+Copyright (c) 2024 AffectAnalysisGroup
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
