@@ -54,7 +54,11 @@
             </div>
             <div class="column">
               <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/AffectAnalysisGroup/PyAFAR" role="button" target="_blank">
-                <i class="fa fa-github"></i> Docs</a> </p>
+                <i class="fa fa-book"></i> Docs</a> </p>
+            </div>
+            <div class="column">
+              <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/AffectAnalysisGroup/PyAFAR" role="button" target="_blank">
+                <i class="fa fa-download"></i> Download</a> </p>
             </div>
           </div>
         </div>
@@ -63,7 +67,7 @@
 
   <section>
     <div class="col-12 text-center">
-    <h5><font color="red">PyAFAR will be available for multiple Operating Systems starting March 24th 2024. PyAFAR for videos of adults and infants can be used on Windows and Linux (comes with optional GPU support). Mac OS support is available for the infant videos only. Download them from Docs/Release.</font></h5>
+    <h5><font color="red">PyAFAR will be available for multiple Operating Systems starting March 24th 2024. PyAFAR for videos of adults and infants can be used on Windows and Linux (comes with optional GPU support). Mac OS support is available for the infant videos only.</font></h5>
   </div>
   </section>
 
@@ -79,7 +83,7 @@
             </div>
  -->          </div>
           <p class="text-left">
-            PyAFAR is a Python-based, open-source facial action unit detection library for use with adults and infants. Convolutional Neural Networks were trained on BP4D+ for adults and MIAMI and CLOCK databases for infants. In adults, Action Unit occurrence and intensity detection are enabled for 12 AUs. The 12 AUs were selected on the criterion that they occurred more than 5% of the time in the training data that included BP4D. Because 5% baseline was the minimum for which reliability could be measured with confidence, AU with prevalence lower than that were not included. Action unit intensity estimation is enabled for 5 of these AU. In infants, AU occurrence is enabled for 9 action units that are involved in expression of positive and negative affect. For both adults and infants, facial landmark and head pose tracking are enabled as well. For adults, multiple persons within a video may be tracked. The library is developed for ease of use. The models are available for fine-tuning and further training. PyAFAR may be easily incorporated into user Python code.</p>
+            PyAFAR is a Python-based, open-source facial action unit detection library for use with adults and infants. Convolutional Neural Networks were trained on BP4D+ for adults, and Histogram of Gradients (HoG) features from MIAMI and CLOCK databases for infants were used with Light Gradient Boosted Machines. In adults, Action Unit occurrence and intensity detection are enabled for 12 AUs. The 12 AUs were selected on the criterion that they occurred more than 5% of the time in the training data that included BP4D. Because 5% baseline was the minimum for which reliability could be measured with confidence, AU with prevalence lower than that were not included. Action unit intensity estimation is enabled for 5 of these AU. In infants, AU occurrence is enabled for 9 action units that are involved in expression of positive and negative affect. For both adults and infants, facial landmark and head pose tracking are enabled as well. For adults, multiple persons within a video may be tracked. The library is developed for ease of use. The models are available for fine-tuning and further training. PyAFAR may be easily incorporated into user Python code.</p>
             <div class="row" style="margin-bottom:5px">
               <div class="col" style="text-align:center">
                 <img class="thumbnail" src="./images/pyafar_pipeline.JPG" style="width:70%; margin-bottom:0px">
