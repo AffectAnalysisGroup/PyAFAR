@@ -70,9 +70,11 @@ PyAFAR is a result of the following publications. If you use PyAFAR in your work
 }
 ```
 
-## MIT License
+## License
 
 Copyright (c) 2024 AffectAnalysisGroup
+
+AFAR is freely available for free non-commercial use, and may be redistributed under these conditions. Interested in a commercial license? Please contact <a href="https://www.jeffcohn.net/">Jeffrey Cohn</a>.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
