@@ -27,11 +27,6 @@ Ensure the executable file (.exe file in windows) and the downloaded models fold
 
 A complete description of each variable in the output can be found [here](./resources/readme/output_format.md).
 
-
-## Infant Models
-The Infant models are not yet available. For participant privacy, they must be encrypted.  We have encountered difficulties in encrypting the models and are working to resolve them. Infant models will be released as soon as reliable encryption is achieved.  
-
-
 ## Citations
 
 PyAFAR is a result of the following publications. If you use PyAFAR in your work, cite our following contributions:
