@@ -8,7 +8,7 @@ PyAFAR GPU capabilities work only on Linux or WSL2.
 
 ## Modules
 
-![pyafar_pipeline](./resources/images/pyafar_pipeline.JPG)
+![pyafar_pipeline](./images/pyafar_pipeline_updated.jpg)
 
 - `Facial Landmarks, Head Pose and Tracking`: Face detection and landmark prediction is done using the [MediaPipe](https://research.google/pubs/pub48292/) library. Tracking is performed using the [FaceNet](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Schroff_FaceNet_A_Unified_2015_CVPR_paper.pdf). The Perspective-n-Point (PnP) method is used to predict Roll, Pitch and Yaw
 - `Face Normalization`: The landmark predictions are used to normalize faces using the [dlib](http://dlib.net/) library.
@@ -32,8 +32,7 @@ PyAFAR is a result of the following publications. If you use PyAFAR in your work
   organization={IEEE}
 }
 ```
-**Infant AU detector**
-
+If you are using our *Infant* AU detector, in addition to the `pipeline` work also cite:
 ```
 @inproceedings{ertugrulpyafar,
   title={Expanding PyAFAR: A Novel Privacy-Preserving Infant AU Detector},
@@ -41,17 +40,6 @@ PyAFAR is a result of the following publications. If you use PyAFAR in your work
   booktitle={International Conference on Automatic Face and Gesture Recognition},
   year={2024},
   organization={IEEE}
-}
-
-@article{onal2023infant,
-  title={Infant AFAR: Automated facial action recognition in infants},
-  author={Onal Ertugrul, Itir and Ahn, Yeojin Amy and Bilalpur, Maneesh and Messinger, Daniel S and Speltz, Matthew L and Cohn, Jeffrey F},
-  journal={Behavior research methods},
-  volume={55},
-  number={3},
-  pages={1024--1035},
-  year={2023},
-  publisher={Springer}
 }
 ```
 
