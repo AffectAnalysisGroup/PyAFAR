@@ -43,6 +43,9 @@ If you are using our *Infant* AU detector, in addition to the `pipeline` work al
 }
 ```
 
+## Acknowledgements
+The development of PyAFAR was supported in part by NIH awards R01MH096951, R01GM105004, and UH3NS100549.
+
 ## License
 
 Copyright (c) 2024 AffectAnalysisGroup.
