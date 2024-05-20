@@ -15,6 +15,8 @@ PyAFAR GPU capabilities work only on Linux or WSL2.
 - `AU predictions`: Normalized faces are used for AU predictions (occurrence and intensity). Separate detection modules for occurrence are available for adults and infants. Intensity predictions are available for adults only.
 - `Output`: PyAFAR can output frame-level predictions in CSV and JSON formats to enable easy reading with most platforms used by both computational as well as domain experts.
 
+As MediaPipe retired its support for python 3.7, PyAFAR has disabled person tracking. We are working a fix.
+
 ### For installation instructions click [here](https://github.com/AffectAnalysisGroup/PyAFAR/wiki/3.-Installation) and how to use click [here](https://github.com/AffectAnalysisGroup/PyAFAR/wiki/4.-How-to-use).
 
 ## Citations
